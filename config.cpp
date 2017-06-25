@@ -40,14 +40,14 @@ class CfgVehicles //Used for defining any vehicle/unit
             displayName = "Ranger Team Leader";
             editorCatergory = "174_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
-            backpack = "B_Kitbag_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_GL_blk_F", "hgun_Pistol_heavy_01_MRD_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_F", "hgun_Pistol_heavy_01_MRD_F","Throw","Put"}; //Should be same as above
-            magazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","HandGrenade","HandGrenade"}; //Initial mag loadout
-            respawnMagazines[] = {"30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag", "30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell","HandGrenade","HandGrenade"}; //Should be same as above
-            linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
-            respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
-            uniformClass = "U_B_HeliPilotCoveralls"; //Uniform to equip
+            backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
+            weapons[] = {"arifle_SPAR_01_GL_blk_F", "hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_F", "hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","GandGrenade","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","GandGrenade","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
+            linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","Rangefinder","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","Rangefinder","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
+            uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
             //hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
             //HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
       };
