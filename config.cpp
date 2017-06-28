@@ -2,7 +2,7 @@ class CfgPatches
 {
       class W_RGR_MOD
       {
-            units[] = {"174_Rgr_TeamLeader"}; //Array of custom units    
+            units[] = {"174_Rgr_TeamLeader","174_Rgr_Grenadier","174_Rgr_Autorifleman","174_Rgr_Medic"}; //Array of custom units    
       };
 };
      
@@ -22,22 +22,47 @@ class CfgVehicleClasses
       {
             displayName = "Men"; //Unit type name in-game (Men, Armor, etc.)
             priority = 1; //Priority in menus
-            };
       };
+};
 
 class CfgVehicles //Used for defining any vehicle/unit
 {
-      class B_Soldier_F; //Predefining inheritence class
+      class B_Recon_TL_F; //Predefining inheritence class
      
-      class 174_Rgr_TeamLeader : B_Soldier_F //New unit classname : Inheritence class
+      class 174_Rgr_TeamLeader : B_Recon_TL_F //New unit classname : Inheritence class
       {
             author = "JaithWraith"; //Self explanatory
             side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
             faction = "174_US_RGR"; //Custom faction class from above
-            _generalMacro = "B_Soldier_F"; //Add and include inheritence class for Zeus compatability
+            _generalMacro = "B_Recon_TL_F"; //Add and include inheritence class for Zeus compatability
             vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
             scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
             displayName = "Ranger Team Leader";
+            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
+            backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
+            weapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
+            linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
+            uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
+            //hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
+            //HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
+      };
+      
+      class B_Recon_JTAC_F; //Predefining inheritence class
+     
+      class 174_Rgr_Grenadier : B_Recon_JTAC_F //New unit classname : Inheritence class
+      {
+            author = "JaithWraith"; //Self explanatory
+            side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
+            faction = "174_US_RGR"; //Custom faction class from above
+            _generalMacro = "B_Recon_JTAC_F"; //Add and include inheritence class for Zeus compatability
+            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
+            displayName = "Ranger Grenadier";
             editorCatergory = "174_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
@@ -45,6 +70,56 @@ class CfgVehicles //Used for defining any vehicle/unit
             respawnWeapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
             magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
+            linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
+            uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
+            //hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
+            //HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
+      };
+      
+      class B_Recon_JTAC_F; //Predefining inheritence class
+     
+      class 174_Rgr_Autorifleman : B_Recon_JTAC_F //New unit classname : Inheritence class
+      {
+            author = "JaithWraith"; //Self explanatory
+            side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
+            faction = "174_US_RGR"; //Custom faction class from above
+            _generalMacro = "B_Recon_JTAC_F"; //Add and include inheritence class for Zeus compatability
+            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
+            displayName = "Ranger Autorifleman";
+            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
+            backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
+            weapons[] = {"arifle_SPAR_02_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_02_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F"}; //Should be same as above
+            linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
+            uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
+            //hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
+            //HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
+      };
+      
+      class B_recon_medic_F; //Predefining inheritence class
+     
+      class 174_Rgr_Medic : B_recon_medic_F //New unit classname : Inheritence class
+      {
+            author = "JaithWraith"; //Self explanatory
+            side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
+            faction = "174_US_RGR"; //Custom faction class from above
+            _generalMacro = "B_recon_medic_F"; //Add and include inheritence class for Zeus compatability
+            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
+            displayName = "Ranger Medic";
+            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
+            backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
+            weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag"}; //Should be same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
             respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
