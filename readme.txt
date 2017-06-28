@@ -1,4 +1,4 @@
-Wraith's Rangers (@JW_rgrs) - V 0.1
+Wraith's Rangers (@JW_rgrs) - V 0.1.0
 Author: JaithWraith
 
 For additional information, you can find this project at www.github.com/JaithWraith/JW_rgrs
