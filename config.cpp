@@ -120,7 +120,7 @@ class CfgVehicles //Used for defining any vehicle/unit
             respawnWeapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
             magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
-            items[] = {"FirstAidKit","FirstAidKit","FirstAidKit","Medikit"};
+            items[] = {"ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_fieldDressing","ACE_bloodIV_250","ACE_bloodIV_250","ACE_bloodIV_250","ACE_bloodIV_250"};
             respawnItems[] = {"FirstAidKit","FirstAidKit","FirstAidKit","Medikit"};
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
             respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
