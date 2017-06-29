@@ -1,14 +1,14 @@
 class CfgPatches
 {
-      class W_RGR_MOD
+      class JW_RGR_MOD
       {
-            units[] = {"174_Rgr_TeamLeader","174_Rgr_Grenadier","174_Rgr_Autorifleman","174_Rgr_Medic"}; //Array of custom units    
+            units[] = {"jw_Rgr_TeamLeader","jw_Rgr_Grenadier","jw_Rgr_Autorifleman","jw_Rgr_Medic"}; //Array of custom units    
       };
 };
      
 class CfgFactionClasses //Configure faction details
 {
-      class 174_US_RGR //Unique faction class
+      class JW_US_RGR //Unique faction class
       {
             displayName = "US Army Rangers"; //Faction name in-game
             Priority = 6; //Priority in menus
@@ -18,7 +18,7 @@ class CfgFactionClasses //Configure faction details
      
 class CfgVehicleClasses
 {
-      class 174_US_RGR_MEN //Unique vehicle class
+      class JW_US_RGR_MEN //Unique vehicle class
       {
             displayName = "Men"; //Unit type name in-game (Men, Armor, etc.)
             priority = 1; //Priority in menus
@@ -29,16 +29,16 @@ class CfgVehicles //Used for defining any vehicle/unit
 {
       class B_Recon_TL_F; //Predefining inheritence class
      
-      class 174_Rgr_TeamLeader : B_Recon_TL_F //New unit classname : Inheritence class
+      class jw_Rgr_TeamLeader : B_Recon_TL_F //New unit classname : Inheritence class
       {
             author = "JaithWraith"; //Self explanatory
             side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
-            faction = "174_US_RGR"; //Custom faction class from above
+            faction = "JW_US_RGR"; //Custom faction class from above
             _generalMacro = "B_Recon_TL_F"; //Add and include inheritence class for Zeus compatability
-            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            vehicleclass = "JW_US_RGR_MEN"; //Custom vehicle class from above
             scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
             displayName = "Ranger Team Leader";
-            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
             weapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
@@ -54,16 +54,16 @@ class CfgVehicles //Used for defining any vehicle/unit
       
       class B_Recon_JTAC_F; //Predefining inheritence class
      
-      class 174_Rgr_Grenadier : B_Recon_JTAC_F //New unit classname : Inheritence class
+      class jw_Rgr_Grenadier : B_Recon_JTAC_F //New unit classname : Inheritence class
       {
             author = "JaithWraith"; //Self explanatory
             side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
-            faction = "174_US_RGR"; //Custom faction class from above
+            faction = "JW_US_RGR"; //Custom faction class from above
             _generalMacro = "B_Recon_JTAC_F"; //Add and include inheritence class for Zeus compatability
-            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            vehicleclass = "JW_US_RGR_MEN"; //Custom vehicle class from above
             scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
             displayName = "Ranger Grenadier";
-            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
             weapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
@@ -79,16 +79,16 @@ class CfgVehicles //Used for defining any vehicle/unit
       
       class B_Recon_JTAC_F; //Predefining inheritence class
      
-      class 174_Rgr_Autorifleman : B_Recon_JTAC_F //New unit classname : Inheritence class
+      class jw_Rgr_Autorifleman : B_Recon_JTAC_F //New unit classname : Inheritence class
       {
             author = "JaithWraith"; //Self explanatory
             side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
-            faction = "174_US_RGR"; //Custom faction class from above
+            faction = "JW_US_RGR"; //Custom faction class from above
             _generalMacro = "B_Recon_JTAC_F"; //Add and include inheritence class for Zeus compatability
-            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            vehicleclass = "JW_US_RGR_MEN"; //Custom vehicle class from above
             scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
             displayName = "Ranger Autorifleman";
-            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
             weapons[] = {"arifle_SPAR_02_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
@@ -104,16 +104,16 @@ class CfgVehicles //Used for defining any vehicle/unit
       
       class B_recon_medic_F; //Predefining inheritence class
      
-      class 174_Rgr_Medic : B_recon_medic_F //New unit classname : Inheritence class
+      class jw_Rgr_Medic : B_recon_medic_F //New unit classname : Inheritence class
       {
             author = "JaithWraith"; //Self explanatory
             side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
-            faction = "174_US_RGR"; //Custom faction class from above
+            faction = "JW_US_RGR"; //Custom faction class from above
             _generalMacro = "B_recon_medic_F"; //Add and include inheritence class for Zeus compatability
-            vehicleclass = "174_US_RGR_MEN"; //Custom vehicle class from above
+            vehicleclass = "JW_US_RGR_MEN"; //Custom vehicle class from above
             scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
             displayName = "Ranger Medic";
-            editorCatergory = "174_US_RGR"; //Must match unique faction class from above
+            editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "B_AssaultPack_rgr"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
             weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
