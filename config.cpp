@@ -46,7 +46,7 @@ class CfgVehicles //Used for defining any vehicle/unit
             };
       };
       
-      class B_KitBag_rgr; //medic kitbag configuration
+      class B_AssaultPack_rgr; //medic kitbag configuration
 
       class jw_bkpk_med: B_AssaultPack_rgr
       {
