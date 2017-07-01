@@ -77,8 +77,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_stnd"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Should be same as above
+            weapons[] = {"arifle_SPAR_01_GL_blk_ERCO_Pointer_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_ERCO_Pointer_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Should be same as above
             magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -102,8 +102,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_stnd"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
+            weapons[] = {"arifle_SPAR_01_GL_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
             magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -127,8 +127,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_stnd"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_02_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_02_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
+            weapons[] = {"arifle_SPAR_02_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_02_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
             magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","150Rnd_556x45_Drum_Mag_F","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -152,8 +152,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_med"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Throw","Put"}; //Should be same as above
+            weapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
             magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","SmokeShell","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
