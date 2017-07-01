@@ -1,16 +1,19 @@
-Wraith's Rangers (@JW_rgrs) - V 0.1.0
+Wraith's Rangers (@JW_rgrs) - V0.2.1
 Author: JaithWraith
 
-For additional information, you can find this project at www.github.com/JaithWraith/JW_rgrs
+For additional information, you can find this project at www.github.com/JaithWraith/JW_rgrs.
 
 OVERVIEW:
 As my first mod, the scope here is pretty minimalistic. The goal of this mod is to create a US Army Rangers faction using gear
-from vanilla Arma as well as the various expansions. I am creating the mod as open source and sharing it with others in case
-anyone else can make use of it.
+from vanilla Arma as well as the various expansions. I am creating the mod as open source on GitHub and sharing it with others
+in case anyone else can make use of it.
+
+As of V0.2.1 the base coding is in place and working as needed for the first four units: the Team Leader, Grenadier, Autorifleman,
+and Medic.
 
 ROADMAP:
-Once all team elements are working with vanilla and expansion Arma gear, I will work on adding items from ACE3. After that point,
-the plan is to create alternative versions for RHS Escalation and/or VSM as well.
+Continued development will focus on adding additional units to the faction. Once a substantial number of units are in place, I plan 
+to create VSM and/or RHS versions.
 
 CHANGES:
 Feel free to request any changes or improvements by contacting me on Steam and I'll see what I can do.
