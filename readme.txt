@@ -11,6 +11,8 @@ in case anyone else can make use of it.
 As of V0.2.1 the base coding is in place and working as needed for the first four units: the Team Leader, Grenadier, Autorifleman,
 and Medic.
 
+Keep in mind that this mod requires the latest versions of CBA and ACE3 as well as the Apex DLC.
+
 ROADMAP:
 Continued development will focus on adding additional units to the faction. Once a substantial number of units are in place, I plan 
 to create VSM and/or RHS versions.
