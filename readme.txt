@@ -1,4 +1,4 @@
-Wraith's Rangers (@JW_rgrs) - V0.2.1
+Wraith's Rangers (@JW_rgrs) - V0.3.0
 Author: JaithWraith
 
 For additional information, you can find this project at www.github.com/JaithWraith/JW_rgrs.
@@ -9,7 +9,7 @@ from vanilla Arma as well as the various expansions. I am creating the mod as op
 in case anyone else can make use of it.
 
 As of V0.2.1 the base coding is in place and working as needed for the first four units: the Team Leader, Grenadier, Autorifleman,
-and Medic.
+and Medic. V0.3.0 adds the Rifleman, Sapper, and Marksman units.
 
 Keep in mind that this mod requires the latest versions of CBA and ACE3 as well as the Apex DLC.
 
