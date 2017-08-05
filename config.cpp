@@ -75,8 +75,12 @@ class CfgVehicles //Used for defining any vehicle/unit
                   item_xx(ACE_morphine,6);
                   item_xx(ACE_epinephrine,2);
                   item_xx(ACE_bloodIV_250,2);
-                  DemoCharge_Remote_Mag;
-                  ClaymoreDirectionalMine_Remote_Mag;
+            };
+            
+            class TransportMagazines
+            {
+                  mag_xx(DemoCharge_Remote_Mag,2);
+                  mag_xx(ClaymoreDirectionalMine_Remote_Mag,1);
             };
       };
       
