@@ -6,7 +6,7 @@ class CfgPatches
 {
       class JW_RGR_MOD
       {
-            units[] = {"jw_bkpk_stnd","jw_bkpk_med","jw_Rgr_TeamLeader","jw_Rgr_Grenadier","jw_Rgr_Autorifleman","jw_Rgr_Medic","jw_Rgr_Rifleman"}; //Array of custom units    
+            units[] = {"jw_bkpk_stnd","jw_bkpk_med","jw_bkpk_sap","jw_Rgr_TeamLeader","jw_Rgr_Grenadier","jw_Rgr_Autorifleman","jw_Rgr_Medic","jw_Rgr_Rifleman","jw_Rgr_Sapper"}; //Array of custom units    
       };
 };
      
@@ -60,6 +60,23 @@ class CfgVehicles //Used for defining any vehicle/unit
                   item_xx(ACE_bloodIV_250,4);
                   item_xx(ACE_bloodIV_500,4);
                   item_xx(ACE_bloodIV,4);
+            };
+      };
+      
+      class B_Kitbag_rgr; //medic assault pack configuration
+
+      class jw_bkpk_sap: B_Kitbag_rgr
+      {
+            author = "JaithWraith";
+            scope = 1;
+            class TransportItems
+            {
+                  item_xx(ACE_fieldDressing,14);
+                  item_xx(ACE_morphine,6);
+                  item_xx(ACE_epinephrine,2);
+                  item_xx(ACE_bloodIV_250,2);
+                  mag_xx(DemoCharge_Remote_Mag,4);
+                  mag_xx(ClaymoreDirectionalMine_Remote_Mag,2);
             };
       };
       
@@ -191,6 +208,31 @@ class CfgVehicles //Used for defining any vehicle/unit
             respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items
             respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above
+            linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
+            uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
+            //hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
+            //HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
+      };
+      
+      class jw_Rgr_Sapper : B_Recon_JTAC_F //New unit classname : Inheritence class
+      {
+            author = "JaithWraith"; //Self explanatory
+            side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
+            faction = "JW_US_RGR"; //Custom faction class from above
+            _generalMacro = "B_Recon_JTAC_F"; //Add and include inheritence class for Zeus compatability
+            vehicleclass = "JW_US_RGR_MEN"; //Custom vehicle class from above
+            scope = 2; //0 = Invisible, 1 = Invisible but usable, 2 = Visible and usable
+            displayName = "Ranger Sapper";
+            editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
+            //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
+            backpack = "jw_bkpk_sap"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
+            weapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
+            items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_Clacker","ACE_DefusalKit"}; //Initial items
+            respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_Clacker","ACE_DefusalKit"}; //Should be the same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
             respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             uniformClass = "U_B_CombatUniform_mcam"; //Uniform to equip
