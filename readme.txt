@@ -4,23 +4,13 @@ Author: JaithWraith
 For additional information, you can find this project at www.github.com/JaithWraith/JW_rgrs.
 
 OVERVIEW:
-As my first mod, the scope here is pretty minimalistic. The goal of this mod is to create a US Army Rangers faction using gear
-from vanilla Arma as well as the various expansions. I am creating the mod as open source on GitHub and sharing it with others
-in case anyone else can make use of it.
+As my first mod, the scope here is pretty minimalistic. The goal is to create a US Army Rangers faction using gear from Arma, its various DLCs, as well as several popular mods, for use in my casual mil-sim group, the 1-74th Rangers. This mod includes the basic team member types for the 1-74th: Infantryman Team Leader, Infantryman, Combat Engineer, Combat Medic Specialist, and Radio Operator-Maintainer. All types are fully geared and compatible with Eden and Zeus. This mod requires the latest versions of Arma 3, APEX, CBA, ACE 3, and TFAR.
 
-As of V0.2.1 the base coding is in place and working as needed for the first four units: the Team Leader, Grenadier, Autorifleman,
-and Medic. V0.3.0 adds the Rifleman, Sapper, and Marksman units.
-
-Keep in mind that this mod requires the latest versions of CBA and ACE3 as well as the Apex DLC.
+1-74th RANGERS:
+I have been a member of several excellent mil-sim groups, but time conflicts with living on the US west coast, my work, and family prevented me from staying for long periods. So, after recruiting some family members and getting them excited about the RP possibilities of mil-sim, I created the 1-74th Rangers. We are currently only fire team sized and are pretty casual about ranks, but we are honing our mil-sim abilities and are interested in growing. If you are at all interested, check out the unit's Arma 3 unit page or send me a message in the BI forums/Steam as JaithWraith.
 
 ROADMAP:
-Continued development will focus on adding additional units to the faction. Once a substantial number of units are in place, I plan 
-to create VSM and/or RHS versions.
+The next phase for this mod is to integrate the SCAR-H from SMA and perhaps some better recoiless rifles like the MAAWS. I am hesitant to download all of RHSUSAF just for these few weapons so let me know if there is a good standalone I just don't know about!
 
 CHANGES:
-Feel free to request any changes or improvements by contacting me on Steam and I'll see what I can do.
-
-IN CLOSING:
-As I mentioned above, this is my first mod, so please feel free to leave feedback on Steam. If you notice something I could do
-better, or if you know a few technicques I could benefit from, I am more than happy to hear about it. :) This is all about pushing
-myself to learn a new skill so I appreciate all of the comments I can get. Thanks!
+Feel free to make any suggestions! This is my first mod and it is all about pushing myself to learn a new skill so I appreciate all of the feedback or suggestions I can get. Thanks!
