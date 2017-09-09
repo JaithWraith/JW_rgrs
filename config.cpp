@@ -6,7 +6,7 @@ class CfgPatches
 {
       class JW_RGR_MOD
       {
-            weapons[] = {"jw_rgr_uniform_mcam"}; //Array of custom weapons
+            weapons[] = {"jw_rgr_uniform_mcam","jw_sma_mk17_S_L","jw_sma_mk17_EGLM_S_L}; //Array of custom weapons
             units[] = {"jw_bkpk_stnd","jw_bkpk_med","jw_bkpk_combeng","jw_bkpk_rad","jw_Rgr_TeamLeader","jw_Rgr_Medic","jw_Rgr_Infantryman","jw_Rgr_CombEng","jw_Rgr_RadioOM"}; //Array of custom units    
       };
 };
@@ -35,6 +35,46 @@ class cfgWeapons
                   mag_xx(ACE_M84,1);
             };
       };
+      
+	class sma_mk17;
+      
+	class jw_sma_mk17_S_L: sma_mk17
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_ERCO_khk_F";
+			};
+                  
+                  class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "sma_anpeq15_blk";
+			};
+		};
+	};
+      
+      class sma_mk17_EGLM;
+      
+	class jw_sma_mk17_EGLM_S_L: sma_mk17_EGLM
+	{
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_ERCO_khk_F";
+			};
+                  
+                  class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "sma_anpeq15_blk";
+			};
+		};
+	};
 };
 
 class CfgFactionClasses //Configure faction details
@@ -141,10 +181,10 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_stnd"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_GL_blk_ERCO_Pointer_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_GL_blk_ERCO_Pointer_F","hgun_P07_F","ACE_Vector","Throw","Put"}; //Should be same as above
-            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
-            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
+            weapons[] = {"jw_sma_mk17_EGLM_S_L","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"jw_sma_mk17_EGLM_S_L","hgun_P07_F","ACE_Vector","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPRg","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPRg","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
             items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items
             respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -168,10 +208,10 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_med"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
-            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
-            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
+            weapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items - empty set .. items moved to uniform
             respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above - empty set .. items moved to uniform
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -195,10 +235,10 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_stnd"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
-            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
-            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
+            weapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag"};  //Should be same as above
             items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items - empty set .. items moved to uniform
             respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above - empty set .. items moved to uniform
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -222,10 +262,10 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_combeng"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
-            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
-            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
+            weapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_Clacker","ACE_DefusalKit"}; //Initial items
             respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_Clacker","ACE_DefusalKit"}; //Should be the same as above
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -249,10 +289,10 @@ class CfgVehicles //Used for defining any vehicle/unit
             editorCatergory = "JW_US_RGR"; //Must match unique faction class from above
             //editorSubCatergory = "Custom_xx"; //Leave commented out unless you want to specify otherwise
             backpack = "jw_bkpk_rad"; //Self explanatory .. comment out if you don't want a backpack/to inherit from class
-            weapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Weapons the unit should spawn with
-            respawnWeapons[] = {"arifle_SPAR_01_blk_ERCO_Pointer_F","hgun_P07_F","Throw","Put"}; //Should be same as above
-            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
-            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","30Rnd_556x45_Stanag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
+            weapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","ACE_Vector","Throw","Put"}; //Weapons the unit should spawn with
+            respawnWeapons[] = {"jw_sma_mk17_S_L","hgun_P07_F","ACE_Vector","Throw","Put"}; //Should be same as above
+            magazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Initial mag loadout
+            respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items - empty set .. items moved to uniform
             respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above - empty set .. items moved to uniform
             linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
@@ -262,4 +302,3 @@ class CfgVehicles //Used for defining any vehicle/unit
             //HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
       };
 };
-              
