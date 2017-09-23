@@ -4,43 +4,45 @@
 
 class CfgPatches
 {
-      class JW_RGR_MOD
-      {
-            weapons[] = {"jw_rgr_uniform_mcam","jw_sma_mk17_S_L","jw_sma_mk17_EGLM_S_L"}; //Array of custom weapons
-            units[] = {"jw_bkpk_stnd","jw_bkpk_med","jw_bkpk_combeng","jw_bkpk_rad","jw_Rgr_TeamLeader","jw_Rgr_Medic","jw_Rgr_Infantryman","jw_Rgr_CombEng","jw_Rgr_RadioOM"}; //Array of custom units    
-      };
+      	class JW_RGR_MOD
+      	{
+            	weapons[] = {"jw_rgr_uniform_mcam","jw_sma_mk17_S_L","jw_sma_mk17_EGLM_S_L"}; //Array of custom weapons
+            	units[] = {"jw_bkpk_stnd","jw_bkpk_med","jw_bkpk_combeng","jw_bkpk_rad","jw_Rgr_TeamLeader","jw_Rgr_Medic","jw_Rgr_Infantryman","jw_Rgr_CombEng","jw_Rgr_RadioOM"}; //Array of custom units    
+      	};
 };
      
 class cfgWeapons
 {
-      class U_B_CombatUniform_mcam; //ranger uniform configuration
+      	class U_B_CombatUniform_mcam; //ranger uniform configuration
  
-      class jw_rgr_uniform_mcam: U_B_CombatUniform_mcam
-      {
-            author = "JaithWraith";
-            scope = 1;
-            class TransportItems
-            {
-                  item_xx(ACE_CableTie,3);
-                  item_xx(ACE_Flashlight_XL50,1);
-                  item_xx(ACE_EarPlugs,2);
-                  item_xx(ACE_MapTools,1);
-                  item_xx(ACE_IT_Strobe_Item,1);
-            };
+      	class jw_rgr_uniform_mcam: U_B_CombatUniform_mcam
+      	{
+            	author = "JaithWraith";
+            	scope = 1;
+            	class TransportItems
+           	{
+                  	item_xx(ACE_CableTie,3);
+                  	item_xx(ACE_Flashlight_XL50,1);
+                  	item_xx(ACE_EarPlugs,2);
+                  	item_xx(ACE_MapTools,1);
+                  	item_xx(ACE_IT_Strobe_Item,1);
+           	};
 
-            class TransportMagazines
-            {
-                  mag_xx(HandGrenade,2);
-                  mag_xx(SmokeShell,2);
-                  mag_xx(ACE_M84,1);
-            };
-      };
+            	class TransportMagazines
+            	{
+                  	mag_xx(HandGrenade,2);
+                  	mag_xx(SmokeShell,2);
+                  	mag_xx(ACE_M84,1);
+            	};
+      	};
       
-      class sma_mk17;
+      	class sma_mk17;
       
-      class jw_sma_mk17_S_L: sma_mk17
-      {
-		class LinkedItems
+      	class jw_sma_mk17_S_L: sma_mk17
+      	{
+		author = "JaithWraith";
+	      	scope = 1;
+	      	class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
@@ -60,6 +62,8 @@ class cfgWeapons
       
 	class jw_sma_mk17_EGLM_S_L: sma_mk17_EGLM
 	{
+		author = "JaithWraith";
+		scope = 1;
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -79,21 +83,21 @@ class cfgWeapons
 
 class CfgFactionClasses //Configure faction details
 {
-      class JW_US_RGR //Unique faction class
-      {
-            displayName = "US Army Rangers"; //Faction name in-game
-            Priority = 6; //Priority in menus
-            side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
-      };
+      	class JW_US_RGR //Unique faction class
+      	{
+            	displayName = "US Army Rangers"; //Faction name in-game
+            	Priority = 6; //Priority in menus
+            	side = 1; //0 = Opfor, 1 = Blufor, 2 = Independent, 3 = Civillian
+      	};
 };
      
 class CfgVehicleClasses
 {
-      class JW_US_RGR_MEN //Unique vehicle class
-      {
-            displayName = "Men"; //Unit type name in-game (Men, Armor, etc.)
-            priority = 1; //Priority in menus
-      };
+      	class JW_US_RGR_MEN //Unique vehicle class
+      	{
+            	displayName = "Men"; //Unit type name in-game (Men, Armor, etc.)
+            	priority = 1; //Priority in menus
+      	};
 };
 
 class CfgVehicles //Used for defining any vehicle/unit
@@ -103,68 +107,68 @@ class CfgVehicles //Used for defining any vehicle/unit
 
       	class jw_bkpk_stnd: B_AssaultPack_rgr
       	{
-            author = "JaithWraith";
-            scope = 1;
-            class TransportItems
-            {
-                item_xx(ACE_fieldDressing,20);
-                item_xx(ACE_morphine,8);
-                item_xx(ACE_epinephrine,2);
-                item_xx(ACE_bloodIV_250,2);
-            };
+            	author = "JaithWraith";
+            	scope = 1;
+            	class TransportItems
+            	{
+                	item_xx(ACE_fieldDressing,20);
+                	item_xx(ACE_morphine,8);
+                	item_xx(ACE_epinephrine,2);
+                	item_xx(ACE_bloodIV_250,2);
+            	};
       	};
       
       	class B_AssaultPack_rgr; //medic assault pack configuration
 
       	class jw_bkpk_med: B_AssaultPack_rgr
       	{
-            author = "JaithWraith";
-            scope = 1;
-            class TransportItems
-            {
-                item_xx(ACE_fieldDressing,40);
-                item_xx(ACE_morphine,20);
-                item_xx(ACE_epinephrine,8);
-                item_xx(ACE_bloodIV_250,4);
-                item_xx(ACE_bloodIV_500,4);
-                item_xx(ACE_bloodIV,4);
-            };
+            	author = "JaithWraith";
+            	scope = 1;
+            	class TransportItems
+            	{
+                	item_xx(ACE_fieldDressing,40);
+                	item_xx(ACE_morphine,20);
+                	item_xx(ACE_epinephrine,8);
+                	item_xx(ACE_bloodIV_250,4);
+                	item_xx(ACE_bloodIV_500,4);
+                	item_xx(ACE_bloodIV,4);
+            	};
       	};
       
       	class B_Kitbag_rgr; //combat engineer assault pack configuration
 
       	class jw_bkpk_combeng: B_Kitbag_rgr
       	{
-            author = "JaithWraith";
-            scope = 1;
-            class TransportItems
-            {
-                item_xx(ACE_fieldDressing,20);
-                item_xx(ACE_morphine,8);
-                item_xx(ACE_epinephrine,2);
-                item_xx(ACE_bloodIV_250,2);
-            };
+            	author = "JaithWraith";
+            	scope = 1;
+            	class TransportItems
+            	{
+                	item_xx(ACE_fieldDressing,20);
+                	item_xx(ACE_morphine,8);
+                	item_xx(ACE_epinephrine,2);
+                	item_xx(ACE_bloodIV_250,2);
+            	};
             
-            class TransportMagazines
-            {
-                mag_xx(DemoCharge_Remote_Mag,2);
-                mag_xx(ClaymoreDirectionalMine_Remote_Mag,1);
-            };
+            	class TransportMagazines
+            	{
+                	mag_xx(DemoCharge_Remote_Mag,2);
+                	mag_xx(ClaymoreDirectionalMine_Remote_Mag,1);
+            	};
       	};
       
       	class tf_anprc155_coyote; //radio operator-maintainer pack configuration
       
       	class jw_bkpk_rad: tf_anprc155_coyote
       	{
-            author = "JaithWraith";
-            scope = 1;
-            class TransportItems
-            {
-                item_xx(ACE_fieldDressing,20);
-                item_xx(ACE_morphine,8);
-                item_xx(ACE_epinephrine,2);
-		item_xx(ACE_bloodIV_250,2);
-            };
+            	author = "JaithWraith";
+            	scope = 1;
+            	class TransportItems
+            	{
+                	item_xx(ACE_fieldDressing,20);
+                	item_xx(ACE_morphine,8);
+                	item_xx(ACE_epinephrine,2);
+			item_xx(ACE_bloodIV_250,2);
+            	};
       	};
       
       	class B_recon_TL_F; //Predefining inheritence class
