@@ -46,13 +46,13 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot = "CowsSlot";
+				slot = "asdg_OpticRail1913";
 				item = "optic_ERCO_khk_F";
 			};
                   
                   	class LinkedItemsAcc
 			{
-				slot = "PointerSlot";
+				slot = "asdg_FrontSideRail";
 				item = "sma_anpeq15_blk";
 			};
 		};
@@ -68,13 +68,13 @@ class cfgWeapons
 		{
 			class LinkedItemsOptic
 			{
-				slot = "CowsSlot";
+				slot = "asdg_OpticRail1913";
 				item = "optic_ERCO_khk_F";
 			};
                   
                   	class LinkedItemsAcc
 			{
-				slot = "PointerSlot";
+				slot = "asdg_FrontSideRail";
 				item = "sma_anpeq15_blk";
 			};
 		};
