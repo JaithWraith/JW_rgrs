@@ -191,8 +191,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             	respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"}; //Should be same as above
             	items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items
             	respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above
-            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
-            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Should be same as above
+            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             	uniformClass = "jw_rgr_uniform_mcam"; //Uniform to equip
             	//hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
             	//HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
@@ -218,8 +218,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             	respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             	items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items - empty set .. items moved to uniform
             	respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above - empty set .. items moved to uniform
-            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
-            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Should be same as above
+            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             	uniformClass = "jw_rgr_uniform_mcam"; //Uniform to equip
             	//hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
             	//HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
@@ -245,8 +245,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             	respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag"};  //Should be same as above
             	items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items - empty set .. items moved to uniform
             	respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above - empty set .. items moved to uniform
-            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
-            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Should be same as above
+            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             	uniformClass = "jw_rgr_uniform_mcam"; //Uniform to equip
             	//hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
             	//HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
@@ -272,8 +272,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             	respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             	items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_Clacker","ACE_DefusalKit"}; //Initial items
             	respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools","ACE_Clacker","ACE_DefusalKit"}; //Should be the same as above
-            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
-            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Should be same as above
+            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             	uniformClass = "jw_rgr_uniform_mcam"; //Uniform to equip
             	//hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
             	//HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
@@ -299,8 +299,8 @@ class CfgVehicles //Used for defining any vehicle/unit
             	respawnMagazines[] = {"HandGrenade","HandGrenade","SmokeShell","SmokeShell","ACE_M84","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","SMA_20Rnd_762x51mm_M80A1_EPR","16Rnd_9x21_Mag","16Rnd_9x21_Mag","16Rnd_9x21_Mag"}; //Should be same as above
             	items[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Initial items - empty set .. items moved to uniform
             	respawnItems[] = {"ACE_IR_Strobe_Item","ACE_CableTie","ACE_CableTie","ACE_CableTie","ACE_Flashlight_XL50","ACE_EarPlugs","ACE_MapTools"}; //Should be the same as above - empty set .. items moved to uniform
-            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
-            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGogglesB_grn_F"}; //Should be same as above
+            	linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemGPS","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Initial vest, helmet, and misc. gear
+            	respawnLinkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_light_sand","ItemMap","ItemCompass","ItemWatch","ItemRadio","NVGogglesB_grn_F"}; //Should be same as above
             	uniformClass = "jw_rgr_uniform_mcam"; //Uniform to equip
             	//hiddenSelections[] = {"camo"}; //ONLY COMMENT THESE IN IF YOU ARE RETEXTURING. IF OTHERWISE IT WILL INHERIT THE UNIFORM FROM THE INHERITANCE CLASS
             	//HiddenSelectionsTextures[] = {"TEST\data\TEST_Uniform_co.paa"};    //Uniform textures path must be to your .pbo
