@@ -80,7 +80,9 @@ class cfgWeapons
 		};
 	};
 	
-	class jw_sma_m4_S_L: sma_m4moe_sm
+	class sma_m4moe;
+	
+	class jw_sma_m4_S_L: sma_m4moe
 	{
 		author = "JaithWraith";
 		scope = 1;
@@ -99,6 +101,8 @@ class cfgWeapons
 			};
 		};
 	};
+	
+	class sma_m4_gl;
 	
 	class jw_sma_m4_EGLM_S_L: sma_m4_gl
 	{
